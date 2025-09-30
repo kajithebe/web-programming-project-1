@@ -4,22 +4,117 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/app.css" />
     <title>Prof. Account</title>
   </head>
 
   <body>
-    <div class="container">
-      <div class="logo"></div>
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="assets/images/logo.png" alt="Site Logo" />Prof. Account</a
+        >
+      </div>
       <nav class="navbar">
         <ul>
-          <li class="navlink"><a href="index.html">Home</a></li>
-          <li class="navlink"><a href="about.html">About</a></li>
-          <li class="navlink"><a href="courses.html">Courses</a></li>
-          <li class="navlink"><a href="blog.html">Blog</a></li>
-          <li class="navlink"><a href="contact.html">Contact</a></li>
+          <li class="navlink">
+            <a class="active" href="index.html"
+              >Home <span class="underline"></span
+            ></a>
+          </li>
+          <li class="navlink">
+            <a href="about.html">About <span class="underline"></span></a>
+          </li>
+          <li class="navlink">
+            <a href="courses.html">Courses <span class="underline"></span></a>
+          </li>
+          <li class="navlink">
+            <a href="blog.html">Blog <span class="underline"></span></a>
+          </li>
+          <li class="navlink">
+            <a href="contact.html">Contact <span class="underline"></span></a>
+          </li>
         </ul>
       </nav>
     </div>
+    <main class="content">
+      <section class="hero-container bg-hero">
+        <div class="hero-grid-container">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Master Accounting & Finance with Expert Guidance
+            </h1>
+            <p class="hero-intro">
+              Professional education in Accounting and Financial Management for
+              students from Class 9 to Bachelors level. Learn from industry
+              expertise and academic excellence.
+            </p>
+            <div class="hero-btn-container">
+              <button class="btn btn-bg-white">Explore Courses</button>
+              <button class="btn btn-bg-dark">Read Articles</button>
+            </div>
+          </div>
+          <div>
+            <img
+              class="hero-img"
+              src="assets/images/hero-img.jpg"
+              alt="Hero Image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits bg-light">
+        <div class="benefits-content-wrapper">
+          <div class="benefits-content">
+            <div class="benefits-title">
+              <h2>Why Choose Professional Accounting Education?</h2>
+            </div>
+            <div class="benefits-summary">
+              <p>
+                Comprehensive curriculum, expert instruction, and practical
+                knowledge for academic and professional success.
+              </p>
+            </div>
+          </div>
+          <div class="benefits-card-container">
+            <div class="benefit-card">
+              <h3 class="card-title">Comprehensive Curriculum</h3>
+              <p class="card-description">
+                Complete coverage from Class 9 to Bachelors level accounting and
+                finance topics.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <h3>Expert Instruction</h3>
+              <p>
+                Learn from experienced educators with industry knowledge and
+                academic expertise.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <h3>Proven Results</h3>
+              <p>
+                Track record of student success in examinations and professional
+                development.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <h3>Current Insights</h3>
+              <p>
+                Stay updated with latest trends in accounting, finance, and
+                technology.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
