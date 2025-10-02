@@ -83,8 +83,7 @@
   padding-top: 78px;
 }
 
-.hero-grid-container {
-  padding: 0 32px;
+.col-2-grid-container {
   margin: 0 74px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -100,7 +99,8 @@
   );
 }
 
-.hero-container {
+.hero-container,
+.about {
   padding: 8rem 0;
 }
 
@@ -176,7 +176,12 @@
   background-color: rgb(248, 248, 249);
 }
 
-.benefits {
+.benefits,
+.philosophy,
+.about,
+.subjects,
+.cta,
+.git {
   padding: 80px 0;
 }
 
@@ -241,10 +246,10 @@
   text-align: center;
 }
 
-.benefit-card .icon {
+.benefit-card .icon,
+.about-stat .icon {
   height: 32px;
   width: auto;
-  vertical-align: middle;
 }
 
 .benefit-card .card-title {
@@ -258,10 +263,6 @@
 .benefit-card p {
   line-height: 1.6rem;
   color: rgb(80, 80, 80);
-}
-
-.subjects {
-  padding: 80px 0;
 }
 
 .subject-content-wrapper {
@@ -359,7 +360,6 @@
 
 .cta {
   background-color: #054a9e;
-  padding: 80px 0;
 }
 
 .cta-btn-wrapper a {
@@ -386,4 +386,173 @@
   text-align: center;
   line-height: 2rem;
   color: rgba(0, 0, 0, 0.7);
+}
+
+.about {
+  padding: 5rem 0;
+}
+
+.about-stat {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-content: flex-start;
+}
+
+.about-stat .icon-container {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(5, 74, 158, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.about-stat .stat-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.about-text {
+  font-size: 20px;
+  margin: 0 0 32px 0;
+  color: #61768f;
+  line-height: 2rem;
+}
+
+.about-img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.about-content {
+  align-content: center;
+}
+
+.text-light {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.experience-content,
+.student-content {
+  line-height: 1.5rem;
+}
+
+.philosophy-content,
+.git-content {
+  padding: 0 32px;
+  margin: 0 auto;
+  max-width: 56rem;
+}
+
+.philosophy-text {
+  color: rgba(0, 0, 0, 0.9);
+  line-height: 1.5rem;
+}
+
+.philosophy-text p {
+  margin-bottom: 24px;
+}
+
+.philosophy-content .section-title,
+.git-content .section-title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.philosophy-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 3rem;
+  gap: 2rem;
+}
+
+.philosophy-card-wrapper .philosophy-card-icon {
+  height: 48px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.philosophy-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  border-radius: 8px;
+  line-height: 1.5rem;
+}
+
+.philosophy-card p {
+  text-align: center;
+  padding-top: 10px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.philosophy-card .philosophy-card-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.git-content .git-text {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0 0 32px 0;
+  text-align: center;
+}
+
+.contact-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  max-width: fit-content;
+  justify-self: center;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  max-width: fit-content;
+  padding: 16px 32px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+.contact-card-wrapper .contact-icon {
+  height: 32px;
+  width: auto;
+}
+
+.contact-card .contact-detail {
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+.contact-detail .contact-type {
+  font-size: 16px;
+  color: #1a232d;
+  font-weight: 600;
+}
+
+.contact-detail .contact-address {
+  font-size: 16px;
+  color: rgb(97, 118, 143);
+}
+
+hr {
+  border: 1px solid rgba(97, 118, 143, 0.2);
+}
+
+footer {
+  background-color: rgb(249, 249, 250);
 }
