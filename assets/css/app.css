@@ -8,7 +8,6 @@
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  /* padding: 0 24px; */
 }
 
 .nav-container {
@@ -140,6 +139,7 @@
   border: none;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
   text-transform: capitalize;
+  text-decoration: none;
 }
 
 .btn-bg-white {
@@ -350,7 +350,6 @@
   margin-left: auto;
   text-align: center;
   font-weight: 600;
-  text-decoration: none;
   transition: transform 0.3s ease;
 }
 
