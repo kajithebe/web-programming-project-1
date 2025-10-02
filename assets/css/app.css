@@ -5,6 +5,12 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  /* padding: 0 24px; */
+}
+
 .nav-container {
   display: flex;
   flex-direction: row;
@@ -110,7 +116,7 @@
 
 .hero-title {
   font-weight: 700;
-  font-size: 60px;
+  font-size: 55px;
 }
 
 .hero-intro {
@@ -129,10 +135,11 @@
 .btn {
   padding: 12px 24px;
   font-size: 16px;
-  font-weight: 500;
-  border-radius: 10px;
+  font-weight: 600;
+  border-radius: 8px;
   border: none;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  text-transform: capitalize;
 }
 
 .btn-bg-white {
@@ -166,7 +173,7 @@
 }
 
 .bg-light {
-  background-color: rgba(244, 245, 246, 0.3);
+  background-color: rgb(248, 248, 249);
 }
 
 .benefits {
@@ -182,18 +189,33 @@
   margin-bottom: 64px;
 }
 
-.benefits-title {
+.section-title {
   color: rgb(44, 44, 44);
   font-size: 2rem;
   margin-bottom: 16px;
 }
 
-.benefits-content .benefits-summary {
+.section-title-white {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.section-description {
   font-size: 1.5rem;
   max-width: 48rem;
   margin: 0 auto;
   color: rgba(0, 0, 0, 0.6);
   line-height: 2rem;
+}
+
+.section-description-white {
+  font-size: 1.5rem;
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 2rem;
+  color: white;
+  margin: 0 0 32px 0;
 }
 
 .benefits-card-container {
@@ -210,7 +232,6 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  display: block;
   margin: 0 auto 16px;
   text-align: center;
   line-height: 64px;
@@ -237,4 +258,133 @@
 .benefit-card p {
   line-height: 1.6rem;
   color: rgb(80, 80, 80);
+}
+
+.subjects {
+  padding: 80px 0;
+}
+
+.subject-content-wrapper {
+  padding: 0 32px;
+}
+
+.subject-content {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.subject-content .course-title {
+  color: rgb(44, 44, 44);
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.course-card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.course-card {
+  padding: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.course-card:hover {
+  transform: scale(103%);
+}
+
+.course-card .icon-wrapper {
+  height: 50px;
+  width: 50px;
+  background-color: rgba(5, 74, 158, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 64px;
+}
+
+.card-title-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.course-icon {
+  height: 32px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.subjects .card-description {
+  padding-bottom: 16px;
+}
+
+.level-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 2rem;
+}
+
+.level-wrapper .difficulty {
+  color: rgb(5, 74, 158);
+}
+
+.btn-courses {
+  background-color: rgb(5, 74, 158);
+  color: white;
+  padding: 1rem 1.5rem;
+  margin-top: 3rem;
+  display: block;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.btn-courses:hover {
+  transform: translateY(3px);
+}
+
+.cta {
+  background-color: #054a9e;
+  padding: 80px 0;
+}
+
+.cta-btn-wrapper a {
+  text-decoration: none;
+}
+
+.cta-content-wrapper {
+  padding: 0 32px;
+  max-width: 56rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.cta-btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.site-footer {
+  padding: 32px;
+  text-align: center;
+  line-height: 2rem;
+  color: rgba(0, 0, 0, 0.7);
 }
