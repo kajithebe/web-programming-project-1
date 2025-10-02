@@ -189,7 +189,8 @@
   padding: 0 32px;
 }
 
-.benefits-content {
+.benefits-content,
+.courses-content {
   text-align: center;
   margin-bottom: 64px;
 }
@@ -555,4 +556,22 @@ hr {
 
 footer {
   background-color: rgb(249, 249, 250);
+}
+
+.courses-content {
+  padding: 80px 0;
+}
+
+.courses-content .section-title-white {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.courses-content .courses-description {
+  font-size: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.902);
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 2rem;
 }
