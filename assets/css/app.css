@@ -181,7 +181,8 @@
 .about,
 .subjects,
 .cta,
-.git {
+.git,
+.accounting {
   padding: 80px 0;
 }
 
@@ -189,8 +190,7 @@
   padding: 0 32px;
 }
 
-.benefits-content,
-.courses-content {
+.benefits-content {
   text-align: center;
   margin-bottom: 64px;
 }
@@ -248,7 +248,8 @@
 }
 
 .benefit-card .icon,
-.about-stat .icon {
+.about-stat .icon,
+.accounting-content .accounting-title-icon {
   height: 32px;
   width: auto;
 }
@@ -560,6 +561,7 @@ footer {
 
 .courses-content {
   padding: 80px 0;
+  text-align: center;
 }
 
 .courses-content .section-title-white {
@@ -574,4 +576,93 @@ footer {
   max-width: 48rem;
   margin: 0 auto;
   line-height: 2rem;
+}
+
+.account-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 16px 0;
+}
+
+.course-section-title {
+  font-size: 2rem;
+}
+
+.course-section-description {
+  font-size: 20px;
+  color: rgb(97, 118, 143);
+  line-height: 1.75rem;
+}
+
+.accounting-header {
+  margin-bottom: 4rem;
+}
+
+.course-card-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+.card-header-text {
+  background-color: rgba(5, 74, 158, 0.1);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.course-card-header .course-icon-wrapper {
+  width: 55px;
+  height: 55px;
+  background-color: rgba(5, 74, 158, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.course-card-wrapper-col-3 .course-card-title {
+  padding: 16px 0 12px 0;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.course-card-wrapper-col-3 .course-card-description {
+  padding: 16px 0 12px 0;
+  font-size: 1.25rem;
+  line-height: 1.625;
+  margin-bottom: 1rem;
+  color: rgb(97, 118, 143);
+}
+
+.course-card-stat-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-stat-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.course-card-stat-wrapper .course-stat-icon {
+  height: 16px;
+  width: auto;
+}
+
+.course-stat {
+  color: rgb(97, 118, 143);
+  font-size: 14px;
+}
+
+.course-card-wrapper-col-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
 }
