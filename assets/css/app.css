@@ -183,11 +183,14 @@
 .cta,
 .git,
 .accounting,
-.finance {
+.finance,
+.featured-articles {
   padding: 80px 0;
 }
 
-.benefits-content-wrapper {
+.benefits-content-wrapper,
+.blog-category-wrapper,
+.featured-article-wrapper {
   padding: 0 32px;
 }
 
@@ -289,7 +292,8 @@
   gap: 20px;
 }
 
-.course-card {
+.course-card,
+.fa-card {
   padding: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -297,7 +301,8 @@
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
-.course-card:hover {
+.course-card:hover,
+.fa-card:hover {
   transform: scale(103%);
 }
 
@@ -462,7 +467,8 @@
 }
 
 .philosophy-content .section-title,
-.git-content .section-title {
+.git-content .section-title,
+.blog .section-title-white {
   text-align: center;
   margin-bottom: 32px;
 }
@@ -560,17 +566,20 @@ footer {
   background-color: rgb(249, 249, 250);
 }
 
-.courses-content {
+.courses-content,
+.blog-content {
   padding: 80px 0;
   text-align: center;
 }
 
-.courses-content .section-title-white {
+.courses-content .section-title-white,
+.blog-content .section-title-white {
   font-weight: 700;
   font-size: 3rem;
 }
 
-.courses-content .courses-description {
+.courses-content .courses-description,
+.blog .blog-description {
   font-size: 20px;
   text-align: center;
   color: rgba(255, 255, 255, 0.902);
@@ -643,6 +652,7 @@ footer {
 .course-card-stat-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .card-stat-wrapper {
@@ -682,11 +692,122 @@ footer {
 .course-card-wrapper-col-3 .btn-courses {
   margin-top: auto;
   align-self: center;
-  margin-top: 2rem;
 }
 
 .finance .course-card-wrapper-col-3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   max-width: 67%;
   margin: 0 auto;
+}
+
+.blog .blog-description {
+  color: white;
+}
+
+.blog-category {
+  padding: 2rem 0;
+  background-color: rgb(249, 249, 250);
+}
+
+.blog-category-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.blog-category-content a {
+  text-decoration: none;
+  color: rgb(5, 74, 158);
+  border: 1px solid rgb(5, 74, 158);
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+}
+
+.fa-title-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+.featured-articles .fa-title {
+  font-size: 2rem;
+  color: rgb(26, 35, 45);
+  line-height: 2.25rem;
+  padding: 0 0 3rem 0;
+}
+
+.fa-icon {
+  height: 2rem;
+}
+
+.fa-card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0 16px 0;
+}
+
+.publication-date {
+  color: hsl(213 19% 47%);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.fa-category {
+  padding: 4px 8px;
+  color: rgb(30 64 175);
+  background-color: rgb(219 234 254);
+  border-radius: 9999px;
+}
+
+.publication-date-wrapper {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 8px;
+}
+
+.date-icon {
+  height: 20px;
+}
+
+.fa-card-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.fa-card {
+  grid-column: 1/2;
+}
+
+.fa-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  margin-bottom: 0.75rem;
+  color: rgb(60, 60, 60);
+}
+
+.fa-card-description {
+  color: hsl(213 19% 47%);
+  line-height: 1.625;
+  margin-bottom: 1rem;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-footer .read-time {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: hsl(213 19% 47%);
 }
