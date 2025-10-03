@@ -6,7 +6,7 @@
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
@@ -182,15 +182,22 @@
 .subjects,
 .cta,
 .git,
-.accounting,
-.finance,
-.featured-articles {
+.accounting-courses,
+.finance-courses,
+.featured-articles,
+.recent-articles,
+.subscribe,
+.article-feedback {
   padding: 80px 0;
 }
 
 .benefits-content-wrapper,
 .blog-category-wrapper,
-.featured-article-wrapper {
+.featured-article-wrapper,
+.recent-article-wrapper,
+.subscribe-wrapper,
+.article-feedback-wrapper,
+.contact-content-wrapper {
   padding: 0 32px;
 }
 
@@ -366,7 +373,7 @@
   transform: translateY(3px);
 }
 
-.cta {
+.bg-dark {
   background-color: #054a9e;
 }
 
@@ -567,7 +574,8 @@ footer {
 }
 
 .courses-content,
-.blog-content {
+.blog-content,
+.contact-content {
   padding: 80px 0;
   text-align: center;
 }
@@ -579,7 +587,8 @@ footer {
 }
 
 .courses-content .courses-description,
-.blog .blog-description {
+.blog .blog-description,
+.contact-description {
   font-size: 20px;
   text-align: center;
   color: rgba(255, 255, 255, 0.902);
@@ -600,7 +609,8 @@ footer {
   font-size: 2rem;
 }
 
-.course-section-description {
+.course-section-description,
+.subscribe-section-description {
   font-size: 20px;
   color: rgb(97, 118, 143);
   line-height: 1.75rem;
@@ -694,7 +704,7 @@ footer {
   align-self: center;
 }
 
-.finance .course-card-wrapper-col-3 {
+.finance-courses .course-card-wrapper-col-3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   max-width: 67%;
   margin: 0 auto;
@@ -732,20 +742,20 @@ footer {
   justify-content: flex-start;
   align-items: center;
   gap: 16px;
+  margin: 0 0 3rem 0;
 }
 
 .featured-articles .fa-title {
   font-size: 2rem;
   color: rgb(26, 35, 45);
   line-height: 2.25rem;
-  padding: 0 0 3rem 0;
 }
 
 .fa-icon {
   height: 2rem;
 }
 
-.fa-card-header {
+.article-card-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -758,7 +768,7 @@ footer {
   line-height: 1.25rem;
 }
 
-.fa-category {
+.article-category {
   padding: 4px 8px;
   color: rgb(30 64 175);
   background-color: rgb(219 234 254);
@@ -786,15 +796,15 @@ footer {
   grid-column: 1/2;
 }
 
-.fa-card-title {
-  font-size: 1.5rem;
+.article-title {
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 2rem;
   margin-bottom: 0.75rem;
   color: rgb(60, 60, 60);
 }
 
-.fa-card-description {
+.article-description {
   color: hsl(213 19% 47%);
   line-height: 1.625;
   margin-bottom: 1rem;
@@ -806,8 +816,114 @@ footer {
   justify-content: space-between;
 }
 
+.card-footer a {
+  text-decoration: none;
+  color: rgb(5, 74, 158);
+}
+
 .card-footer .read-time {
   font-size: 0.875rem;
   line-height: 1.25rem;
-  color: hsl(213 19% 47%);
+  color: rgb(97, 118, 143);
+}
+
+.accounting {
+  background-color: rgb(219 234 254);
+}
+
+.technology {
+  background-color: rgb(243 232 255);
+}
+
+.finance {
+  background-color: rgb(220 252 231);
+}
+
+.recent-article-header {
+  margin: 0 0 3rem 0;
+}
+
+.article-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.article-card {
+  overflow: hidden;
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  transition: transform 0.3s ease;
+}
+
+.article-card:hover {
+  transform: scale(102%);
+}
+
+.subscribe-section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 16px 0;
+}
+
+.subscribe-section-description {
+  margin-bottom: 32px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.email-input {
+  padding: 12px 16px;
+  border: 1px solid rgb(216, 224, 233);
+  border-radius: 8px;
+  transition: border-color 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.email-input:focus {
+  border-color: rgb(8, 106, 218);
+}
+
+.btn-subscribe {
+  background-color: rgb(5, 74, 158);
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.unsubscribe {
+  color: rgb(97 118 143);
+  text-align: center;
+  margin: 12px 0 0 0;
+}
+
+.article-feedback-wrapper {
+  text-align: center;
+}
+
+#article-feedback-description {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+
+/* #btn-git {
+  background-color: #fff;
+} */
+
+.article-feedback-wrapper a {
+  background-color: #fff;
+  color: rgb(5 74 158);
+  font-weight: 500;
 }
