@@ -187,7 +187,8 @@
 .featured-articles,
 .recent-articles,
 .subscribe,
-.article-feedback {
+.article-feedback,
+.contact-form-section {
   padding: 80px 0;
 }
 
@@ -514,6 +515,7 @@
   font-weight: 600;
   font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.7);
+  text-align: center;
 }
 
 .git-content .git-text {
@@ -605,16 +607,20 @@ footer {
   margin: 0 0 16px 0;
 }
 
-.course-section-title {
+.course-section-title,
+.contact-form-section .contact-form-title {
   font-size: 2rem;
+  text-align: center;
 }
 
 .course-section-description,
-.subscribe-section-description {
+.subscribe-section-description,
+.contact-form-section .section-description {
   font-size: 20px;
   color: rgb(97, 118, 143);
   line-height: 1.75rem;
   text-align: center;
+  margin-top: 16px;
 }
 
 .course-header {
@@ -872,7 +878,7 @@ footer {
   margin-bottom: 32px;
 }
 
-form {
+.subscribe form {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -918,12 +924,146 @@ form {
   margin-bottom: 32px;
 }
 
-/* #btn-git {
-  background-color: #fff;
-} */
-
 .article-feedback-wrapper a {
   background-color: #fff;
   color: rgb(5 74 158);
   font-weight: 500;
+}
+
+.contact-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border: 1px solid rgb(229 231 235);
+  border-radius: 8px;
+}
+
+.contact-detail .icon-wrapper {
+  height: 4rem;
+  width: 4rem;
+  background-color: rgb(5 74 158 / 10%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-detail .contact-icon {
+  max-height: 40rem;
+  width: auto;
+}
+
+.contact-content .contact-type {
+  font-size: 600;
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.contact-detail .response-time {
+  color: rgb(97 118 143);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin: 4px 0 0 0;
+}
+
+.contact-detail .contact-icon {
+  max-height: 48px;
+  max-width: 48px;
+}
+
+.contact-form-section .form-container {
+  background-color: white;
+  padding: 32px;
+  border: 1px solid rgb(216 224 233);
+  border-radius: 8px;
+  margin: 0 5rem;
+}
+
+.form-label {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.field-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.sender-detail {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.full-width {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.btn-send {
+  background-color: #054a9e;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  margin: 24px auto 0 auto;
+}
+
+.send-icon {
+  max-height: 24px;
+}
+
+.form-label {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 1px solid rgb(216 224 233);
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.form-select {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.field-wrapper {
+  margin-bottom: 24px;
+}
+
+.form-textarea {
+  height: 5rem;
+  max-height: 8rem;
+  overflow: hidden;
+}
+
+.contact-form-section .section-description {
+  margin-bottom: 2rem;
+}
+
+.field-wrapper .required {
+  color: rgb(245, 50, 50);
 }
