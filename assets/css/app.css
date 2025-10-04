@@ -1067,3 +1067,348 @@ footer {
 .field-wrapper .required {
   color: rgb(245, 50, 50);
 }
+
+@media (max-width: 1024px) {
+  .col-2-grid-container {
+    margin: 0 40px;
+    gap: 2rem;
+  }
+
+  .hero-title {
+    font-size: 45px;
+  }
+
+  .hero-intro {
+    font-size: 18px;
+  }
+
+  .benefits-card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .course-card-wrapper-col-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .philosophy-card-wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .article-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fa-card-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .fa-card {
+    grid-column: 1;
+  }
+
+  .contact-card-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .finance-courses .course-card-wrapper-col-3 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .nav-container {
+    padding: 12px 20px;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .content {
+    padding-top: 98px;
+  }
+
+  .nav-container .logo a {
+    font-size: 1.5rem;
+  }
+
+  .nav-container .logo img {
+    height: 40px;
+  }
+
+  .nav-container .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-container .navbar .navlink {
+    padding: 0 10px;
+  }
+
+  .col-2-grid-container {
+    margin: 0 20px;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-container,
+  .about {
+    padding: 4rem 0;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-intro {
+    padding: 16px 0 24px 0;
+    font-size: 16px;
+  }
+
+  .hero-btn-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-btn-container .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .benefits,
+  .philosophy,
+  .subjects,
+  .cta,
+  .git,
+  .accounting-courses,
+  .finance-courses,
+  .featured-articles,
+  .recent-articles,
+  .subscribe,
+  .article-feedback,
+  .contact-form-section {
+    padding: 40px 0;
+  }
+
+  .benefits-content-wrapper,
+  .blog-category-wrapper,
+  .featured-article-wrapper,
+  .recent-article-wrapper,
+  .subscribe-wrapper,
+  .article-feedback-wrapper,
+  .contact-content-wrapper {
+    padding: 0 20px;
+  }
+
+  .benefits-content {
+    margin-bottom: 32px;
+  }
+
+  .section-title,
+  .section-title-white {
+    font-size: 1.5rem;
+  }
+
+  .section-description,
+  .section-description-white {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .benefits-card-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .subject-content-wrapper {
+    padding: 0 20px;
+  }
+
+  .subject-content {
+    margin-bottom: 32px;
+  }
+
+  .course-card-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-courses {
+    margin-top: 2rem;
+    padding: 0.875rem 1.25rem;
+  }
+
+  .cta-content-wrapper {
+    padding: 0 20px;
+  }
+
+  .cta-btn-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-btn-wrapper .btn {
+    width: 100%;
+  }
+
+  .about-stat {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-text {
+    font-size: 16px;
+    line-height: 1.75rem;
+  }
+
+  .about-img {
+    max-width: 100%;
+  }
+
+  .philosophy-content,
+  .git-content {
+    padding: 0 20px;
+  }
+
+  .philosophy-card-wrapper {
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+
+  .contact-card-wrapper {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .courses-content,
+  .blog-content,
+  .contact-content {
+    padding: 40px 0;
+  }
+
+  .courses-content .section-title-white,
+  .blog-content .section-title-white {
+    font-size: 2rem;
+  }
+
+  .courses-content .courses-description,
+  .blog .blog-description,
+  .contact-description {
+    font-size: 16px;
+    line-height: 1.75rem;
+    padding: 0 20px;
+  }
+
+  .course-section-title,
+  .contact-form-section .contact-form-title {
+    font-size: 1.5rem;
+  }
+
+  .course-section-description,
+  .subscribe-section-description,
+  .contact-form-section .section-description {
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
+
+  .course-header {
+    margin-bottom: 2rem;
+  }
+
+  .course-card-wrapper-col-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .finance-courses .course-card-wrapper-col-3 {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .blog-category-content {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  .fa-title-wrapper {
+    margin: 0 0 2rem 0;
+  }
+
+  .featured-articles .fa-title {
+    font-size: 1.5rem;
+  }
+
+  .fa-card-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .article-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subscribe form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .email-input {
+    width: 100%;
+  }
+
+  .btn-subscribe {
+    width: 100%;
+  }
+
+  .contact-card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-section .form-container {
+    margin: 0 20px;
+    padding: 24px;
+  }
+
+  .sender-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-send {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container .navbar .navlink {
+    padding: 8px;
+  }
+
+  .content {
+    padding-top: 114px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .section-title,
+  .section-title-white {
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .courses-content .section-title-white,
+  .blog-content .section-title-white {
+    font-size: 1.75rem;
+  }
+
+  .contact-form-section .form-container {
+    margin: 0 10px;
+    padding: 20px;
+  }
+}
